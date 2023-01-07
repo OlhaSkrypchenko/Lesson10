@@ -1,4 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 @font-face {
@@ -71,7 +70,6 @@ header .container {
   display: flex;
   align-items: center;
   padding-bottom: 9px;
-  padding-right: 54px;
 }
 
 .logo-img {
@@ -88,16 +86,19 @@ header .container {
   font-family: "Sofia Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
+  line-height: 36px
 }
 
-.company-name--header {
-  font-size: 38px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  /* line-height: 140%; */
+.company-name {
+  font-size: 38.7869px;
   text-transform: uppercase;
 }
 
-.company-specialization--header {
+.company-name--header {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.company-specialization {
   font-size: 26.8525px;
 }
 
@@ -200,7 +201,6 @@ letter-spacing: 0.1em;
 .text {
   width: 39%;
   margin: 30px 0 48px;
-  /* line-height: 140%; */
 }
 
 /* link-buttons */
@@ -219,7 +219,6 @@ letter-spacing: 0.1em;
   text-align: center;
   width: 180px;
 height: 60px;
-/* line-height: 140%; */
 border-radius: 8px;
 }
 
@@ -326,8 +325,6 @@ line-height: 130%;
   align-items: center;
   gap: 18px;
   color: var(--blue);
-  /* font-family: "Muller", sans-serif;
-  font-weight: 700; */
   font-weight: bold;
   font-size: 18px;
   margin: 5px 0 20px;
@@ -352,11 +349,7 @@ font-size: 40px;
 
 footer {
   background: rgb(161, 199, 212);
-  background: linear-gradient(
-    90deg,
-    rgba(161, 199, 212, 1) 0%,
-    rgba(10, 130, 171, 1) 100%
-  );
+  background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
 }
 
 @media screen and (max-width: 1200px) {
@@ -372,14 +365,16 @@ footer {
   }
 }
 
-footer {
+.footer {
   min-width: 1180px;
+  font-size: 20px;
+  line-height: 135%;
 }
 footer .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 40px 0;
+  gap: 35%;
+  padding: 60px 0 12px;
 }
 
 /*FOOTER-INFO*/
@@ -387,20 +382,9 @@ footer .container {
 .footer-info {
   color: var(--dark-blue);
 }
-.company--footer {
-  font-family: inherit;
-}
 
 .company--footer {
   color: var(--dark-blue);
-}
-
-.company-name {
-  text-transform: uppercase;
-}
-
-.company-specialization {
-  font-size: 16px;
 }
 
 /* menu--footer */
@@ -408,23 +392,27 @@ footer .container {
 .info-container--footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+.menu-container--footer{
+  padding: 0;
 }
 
 .menu-list--footer {
   padding: 0;
-  margin: 0;
+  margin: 0 0 7px 0;
   list-style: none;
   text-transform: capitalize;
 }
 
 .menu-item--footer {
-  margin: 15px 0;
+  margin-bottom: 20px ;
 }
 
 .menu-item-link--footer {
   color: var(--dark-blue);
-  font-size: 16px;
+line-height: 135%;
 }
 
 /* Languages */
@@ -433,15 +421,21 @@ footer .container {
   color: var(--dark-blue);
 }
 
+/* workshift */
+
 .workshift {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  line-height: 135%;
+
 }
 
 .workshift-title {
-  margin: 0 0 5px 3px;
-  font-size: inherit;
+  margin: 0 0 7px 3px;
+  font-size: 20px;
+ 
+
 }
 
 /* CONTACTS */
@@ -452,21 +446,21 @@ footer .container {
 }
 
 .contacts-title {
-  font-family: "Muller";
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
   text-transform: uppercase;
-  font-size: 23px;
-  font-weight: 400;
-  margin: 0 0 15px 0;
+  margin: 0 0 20px 0;
 }
 
 .address {
   display: flex;
   flex-direction: column;
-  margin: 15px 0;
+  margin: 0 0 20px 0;
 }
 
 .company-name-footer {
-  margin: 10px 0;
+  margin: 0 0 15px 0;
 }
 
 .footer-link {
@@ -481,46 +475,34 @@ footer .container {
   width: 70%;
 }
 
+.inst-mail-container,
 .tel-container--footer,
-.social-media {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 3fr;
-  margin: 5px 0;
-}
-
-.social-media {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.social-media-img--whatsapp {
-  vertical-align: text-bottom;
-}
-
-.inst-mail-container {
-  display: grid;
-  row-gap: 5px;
-  grid-template-columns: auto;
-}
-
+.social-media,
 .instagram-link,
 .email-link {
   display: flex;
-  gap: 30px;
-  align-items: center;
+  gap: 15px;
 }
 
-.email-img-footer,
-.email-text-footer {
-  transform: translate(-2px);
+.inst-mail-container {
+  flex-direction: column;
 }
 
-.email-text-footer {
-  transform: translate(-4px);
+.tel-container--footer,
+.social-media {
+  margin: 15px 0;
+}
+
+.social-media{
+  gap: 22px;
+}
+
+.social-media-img{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .copyright {
   text-align: end;
-  font-size: 12px;
-  margin: 15px 0;
+  font-size: 13px;
+  margin: 12px 0 0;
 }
