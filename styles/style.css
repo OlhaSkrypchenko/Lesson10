@@ -501,10 +501,6 @@ white-space: nowrap;
 
 /* footer */
 
-footer {
- 
-}
-
 @media screen and (max-width: 1200px) {
   .container {
     padding: 0 25px;
