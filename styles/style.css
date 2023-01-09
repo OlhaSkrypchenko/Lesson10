@@ -127,11 +127,13 @@ header .container {
 line-height: 19px;
 }
 
+
+
 /* info-wrapper */
 .info-wrapper {
-  display: flex;
+  /* display: flex; */
   gap: 20px;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 /* telephone  */
@@ -165,6 +167,8 @@ line-height: 19px;
 .lang-pipe {
   font-size: 20px;
 }
+
+
 
 /* main */
 
@@ -653,6 +657,286 @@ line-height: 135%;
   text-align: end;
   font-size: 13px;
   margin: 12px 0 0;
+}
+
+/* media requests */
+
+
+@media screen and (max-width: 1130px) { 
+  .menu-list {
+    column-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 960px) { 
+
+ 
+   body {
+    font-size: 14px;
+  }
+
+  header .container{
+    padding: 30px 15px 46px;
+  }
+
+  .logo-img--header{
+    width: 33.39px;
+    height: 34.67px;
+  }
+
+  .company--header {
+    line-height: unset;
+  }
+
+  .company-name--header {
+    font-size: 19px;
+    line-height: unset;
+  }
+
+  .company-specialization--header {
+    font-size: 14px;
+  }
+  
+
+  .menu-container {
+    padding: 0;
+  }
+
+  
+  .languages--header {
+    display: none;
+  }
+
+  .info-wrapper {
+    padding: 3px 0;
+  }
+
+  .tel-img--header {
+    width: 16px;
+  }
+
+  .languages--header {
+    display: none;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .main-title span {
+    text-align: center;
+  }
+
+  .text {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0 10px;
+  }
+
+  .link-btns {
+      width: 100%;
+      margin: 20px 0;
+      justify-content: space-around;
+  }
+
+  .link-btn {
+    padding: 7.5px 0;
+    font-size: 16px;
+    width: 100px;
+    height: 35px;
+    border-radius: 4.5px;
+    line-height: 140%;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  .company-name--header {
+    font-size: 17px;
+  }
+
+  .company-specialization--header {
+    font-size: 12px;
+  }
+  
+  .tel-img--header {
+    width: 15px;
+  }
+
+  .main-title {
+    font-size: 22px;
+  }
+
+  main {
+    padding-bottom: 20px;
+  }
+
+  .main-info {
+    padding: 116px 0 160px;
+  }
+  .menu-container--header {
+    display: none;
+  }
+
+  .card {
+    padding: 0 7px;
+  }
+
+  .card-number {
+    font-size: 40px;
+  }
+  
+  .section-title{
+    font-size: 22px;
+  }
+
+  .reasons {
+    margin: 20px auto;
+  }
+
+  .reason-number {
+    font-size: 22px;
+  }
+
+  .reason-title {
+    font-size: 16px;
+  }
+
+  .container--form{
+    padding: 0;
+  }
+
+  .form-section{
+    margin: 20px auto;
+  }
+
+  .form-title {
+    font-size: 22px;
+  }
+
+  .form {
+    gap: 15px;
+    padding: 20px 18px;
+
+  }
+
+  .form-img {
+    width: 15px;
+  }
+
+  .input::placeholder {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 14px;
+    background: linear-gradient(180deg, #A1C7D4 0%, #0680AA 100%);
+  }
+
+  .footer .container {
+    padding: 30px 8px 0;
+    justify-content: space-between;
+}
+
+  .logo-img--footer {
+    width: 55.33px;
+height: 57.46px;
+  }
+
+  .company--footer {
+    line-height: 140%;
+  }
+
+  .company-name--footer {
+    font-size: 27px;
+  }
+
+  .company-specialization--footer {
+    font-size: 19px;
+  }
+
+  .info-container--footer {
+    margin-top: 18px;
+  }
+
+  .lang-link {
+    font-size: 14px;
+  }
+
+  .workshift-title {
+    font-size: 14px;
+  }
+  
+
+  .contacts {
+    font-size: 17px;
+  }
+  .contacts-title {
+    font-size: 21px;
+line-height: 25px;
+  }
+
+  .social-media{
+    display: none;
+  }
+
+.social-media-img {
+ width: 24px;
+ filter:none;
+}
+
+.copyright {
+  font-size: 11px;
+  margin: 36px 0;
+}
+}
+    
+@media screen and (max-width: 400px) {
+  .main-info {
+    padding-bottom: 245px;
+  }
+
+  .link-btns {
+    margin:  0;
+    justify-content: space-between;
+  }
+
+  .cards {
+    row-gap: 20px;
+    margin: 20px auto;
+    transform: translate(0, 0);
+  }
+
+  .reasons {
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    /* row-gap: 12px;
+    column-gap: 40px;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1020px;
+    padding: 16px 20px;
+    background: var(--light-blue);
+    border-radius: 15px; */
+}
+}
+
+
+@media screen and (max-width: 350px) { 
+  header .container{
+    padding: 30px 0 46px;
+  }
 }
 
 
