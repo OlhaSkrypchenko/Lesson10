@@ -177,12 +177,12 @@ main {
 }
 
 .main-info {
-  padding: 180px 0 106px;
+  padding: 180px 0 0;
   /* min-width: 1180px; */
   background-image: url(./../assets/lady.png), url(./../assets/background.jpg);
 
-  background-position: 87% 4%, 0% 0%;
-  background-size: 41.5%, cover;
+  background-position: 73% 100%, 0% 0%;
+  background-size: 30%, cover;
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -213,6 +213,7 @@ letter-spacing: 0.1em;
   display: flex;
   justify-content: space-between;
   width: 40.3%;
+  padding: 0 0 106px;
 }
 
 .link-btn {
@@ -719,6 +720,14 @@ line-height: 135%;
     display: none;
   }
 
+  .main-info {
+   
+    
+    background-position: 100% 98%, 0% 0%;
+  
+  }
+  
+
   .main-title {
     display: flex;
     flex-direction: column;
@@ -779,10 +788,17 @@ line-height: 135%;
   }
 
   .main-info {
-    padding: 116px 0 160px;
+    padding: 116px 0 0;
+    background-position: 50% 98.42%, 0% 0%;
   }
+
+
   .menu-container--header {
     display: none;
+  }
+
+  .link-btns {
+    padding: 0 0 160px;
   }
 
   .card {
@@ -904,12 +920,21 @@ line-height: 25px;
 }
     
 @media screen and (max-width: 400px) {
-  .main-info {
+  /* .main-info {
     padding-bottom: 245px;
+  } */
+
+  .main-info {
+   
+    
+    background-position: 42% 98.42%, 0% 0%;
+    background-size: 70%, cover;
+  
   }
+  
 
   .link-btns {
-    margin:  0;
+    padding:  0 0 245px;
     justify-content: space-between;
   }
 
