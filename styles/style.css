@@ -377,7 +377,6 @@ main {
 }
 
 
-
 .form-title {
   text-transform: uppercase;
   font-weight: 500;
@@ -1221,9 +1220,14 @@ footer .container {
   }
 
 
-.footer-link--icon:before {
+  .footer-link--icon:before {
   height: 19px;
-}
+  }
+
+  .tel-link--footer{
+    display:inline-block;
+    margin-bottom: 15px;
+   }
 
   .social-media {
     display: none;
