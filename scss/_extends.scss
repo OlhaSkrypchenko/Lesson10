@@ -1,0 +1,16 @@
+.font-styles {
+    font-family: $basicFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $black;
+}
+
+.defaultLink {
+    color: $black;
+
+    &:hover {
+        color: $blue;
+    }
+}

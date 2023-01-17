@@ -5,11 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- <link rel="stylesheet" href="./styles/style.css"> -->
 </head>
 <body>
   <!-- header -->
-  <header>
+  <header class="header">
     <div class="container">
       <div class="logo-container">
         <img class="logo-img logo-img--header" src="./assets/tooth.svg" alt="logo">
@@ -24,31 +25,29 @@
             <span class="burger-line"></span>
           </div>
         </div>
-        <ul class="menu-list menu-list--header" tabindex="-1">
+        <ul class="menu menu--header" tabindex="-1">
           <li class="menu-item">
-            <a class="link menu-link"  href="#">main</a>
+            <a class="menu-link"  href="#">main</a>
           </li>
           <li class="menu-item">
-            <a class="link menu-link" href="#">servises</a>
+            <a class="menu-link" href="#">servises</a>
           </li>
           <li class="menu-item">
-            <a class=" link menu-link" href="#">contacts</a>
+            <a class="menu-link" href="#">contacts</a>
           </li>
         </ul>
       </nav>
       <div class="info-wrapper">
-        <div class="tel-container">
-          <a class="link tel-link" href="tel:/+380999999999">+38 (099) 999-99-99</a>
-        </div>
+        <a class="tel-link" href="tel:/+380999999999">+38 (099) 999-99-99</a>
         <div class="languages languages--header">
-          <a class="link lang-link lang-link--current" href="#uk_lang" hreflang="uk" lang="uk">ua</a>
-          <a class="link lang-link" href="#en_lang" hreflang="en" lang="en">en</a>
+          <a class="lang-link lang-link--current" href="#uk_lang" hreflang="uk" lang="uk">ua</a>
+          <a class="lang-link" href="#en_lang" hreflang="en" lang="en">en</a>
         </div>
       </div>
     </div>
   </header>
   <!-- MAIN -->
-  <main>
+  <main class="main">
     <section class="main-info">
       <div class="container">
         <h1 class="main-title">
@@ -301,7 +300,7 @@
         <div class="info-container--footer">
           <div>
             <nav class="menu-container menu-container--footer">
-              <ul class="menu-list--footer">
+              <ul class="menu--footer">
                 <li class="menu-item--footer">
                   <a class="link menu-link--footer" href="#">home</a>
                 </li>
