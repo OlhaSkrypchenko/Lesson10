@@ -184,7 +184,6 @@ header .container {
 
 }
 
-
 .menu-list {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -1223,7 +1222,6 @@ footer .container {
   }
   .menu-list--header {
     visibility: hidden;
-    transform: translateY(-400px);
     transition-property: all;
     transition-duration: 1s;
     display: flex;
@@ -1237,13 +1235,15 @@ footer .container {
     background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
     z-index: 1;
     position: absolute;
-    top:0;
+    top: -400px;
     left: 0;
+    transition-property: visibility, transform;
+    transition-duration: 1s;
   }
+
   .burger-container:focus + .menu-list--header {
     visibility: visible;
-
-    transform: translateY(0);
+    top: 0;
 
   }
 
