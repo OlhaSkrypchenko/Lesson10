@@ -1241,14 +1241,15 @@ footer .container {
     transition-duration: 1s;
   }
 
-  .burger-container:focus + .menu-list--header {
+  .burger-container:focus + .menu-list--header,
+  .burger-container + .menu-list--header:focus-within   {
     visibility: visible;
     top: 0;
-
   }
 
   .burger-container:focus + .menu-list--header .menu-link:hover,
-  .burger-container:focus + .menu-list--header .menu-link:focus {
+  .burger-container:focus  + .menu-list--header .menu-link:focus,
+  .menu-link:hover {
     color: var(--white);
   }
 
