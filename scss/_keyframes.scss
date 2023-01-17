@@ -1,0 +1,45 @@
+@keyframes main-info {
+    0%   {opacity: 0; top:100px;}
+    100% {opacity: 1; top:0px;}
+}
+
+@keyframes cards {
+    0%   {opacity: 0; left:-100px;}
+    100% {opacity: 1; left:0px;}
+}
+
+@keyframes service--1 {
+    0%   {opacity: 0; top:-30px; left: -300px;}
+    100% {opacity: 1; top: 0; left: 0}
+}
+  
+@keyframes service--2 {
+  0%   {opacity: 0;  left: -300px;}
+  100% {opacity: 1;  left: 0;};
+}
+  
+@keyframes service--3 {
+  0%   {opacity: 0; bottom:-30px; left: -300px;}
+  100% {opacity: 1; bottom: 0; left: 0;}
+}
+  
+@keyframes service--4 {
+  0%   {opacity: 0; top:-30px; right: -300px;}
+  100% {opacity: 1; top: 0; right: 0;}
+}
+  
+@keyframes service--5 {
+  0%   {opacity: 0;  right: -300px;}
+  100% {opacity: 1;  right: 0;}
+}
+  
+@keyframes service--6 {
+  0%   {opacity: 0; bottom:-30px; right: -300px;}
+  100% {opacity: 1; bottom: 0; right: 0;}
+}
+
+@keyframes circle-point {
+    0%{top: 139px; transform-origin: unset;} 
+    100%{top: -12px;}
+}
+  

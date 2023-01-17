@@ -1,0 +1,30 @@
+.languages {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transform: translate(0px, -2px);
+
+  .lang-link {
+    @extend .defaultLink;
+    font-size: 20px;
+    text-transform: uppercase;
+  
+    &--current {
+      font-weight: bold;
+    }
+  
+    &:not(:last-of-type)::after {
+      content:'|';
+      padding-left: 12px;
+      color: $black;
+    }
+
+    &--footer {
+      color: $dark-blue;
+    }
+    
+    &--footer:hover {
+      color: $white;
+    }
+  }  
+}
