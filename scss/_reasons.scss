@@ -1,0 +1,87 @@
+.section-text {
+    text-align: center;
+    width: 49%;
+    margin: 0 auto;
+}
+
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 12px;
+    column-gap: 40px;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1020px;
+    padding: 16px 20px;
+    background: $light-blue;
+    border-radius: 15px;
+  
+    .reason {
+      border-radius: 15px;
+      padding: 10px 20px 40px 20px;
+      background: $white;
+
+      &-1 {
+        @media screen and (min-width: 1070px) {
+            order: 1;
+          }
+      }
+
+      &-2 {
+        @media screen and (min-width: 1070px) {
+            order: 4;
+          }
+      }
+
+      &-3 {
+        @media screen and (min-width: 1070px) {
+            order: 2;
+          }
+      }
+
+      &-4 {
+        @media screen and (min-width: 1070px) {
+            order: 5;
+          }
+      }
+
+      &-5 {
+        @media screen and (min-width: 1070px) {
+            order: 3;
+          }
+      }
+
+
+      &-6 {
+        @media screen and (min-width: 1070px) {
+            order: 6;
+          }
+      }
+  
+      &-title {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        color: $blue;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 5px 0 20px;
+  
+        &-text {
+          &--sm {
+            padding: 0 18px 0 0;
+          }
+        }
+      }
+  
+      &-number {
+        font-weight: 400;
+        font-size: 40px;
+      }
+  
+      &-text {
+        line-height: 19px;
+        margin: 0;
+      }
+    }
+}
