@@ -39,7 +39,7 @@
     font-weight: bold;
 }
 
-.section-title {
+.title {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 5px;
@@ -51,12 +51,12 @@
         font-size: 22px;
     }
   
-    &-sub {
-      @extend .subtitle;
-    }
+    // &-sub {
+    //   @extend .subtitle;
+    // }
 }
 
-.sections-gap {
+.sectionMargin {
     margin: 90px auto;
     
     @media screen and (max-width: 768px) {

@@ -1,11 +1,11 @@
 .album {
+    @extend .sectionMargin;
     display: flex;
     align-items: center;
     gap: 70px;
     flex-wrap: wrap;
     width: 100%;
     max-width: 980px;
-    margin: 0 auto;
 
     @media screen and (max-width: 1070px) {
         justify-content: center;
