@@ -292,6 +292,16 @@ ul, li {
   padding: 60px 0 34px;
   position: relative;
 }
+@media screen and (max-width: 960px) {
+  .header .container {
+    padding: 30px 15px 46px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .header .container {
+    padding: 30px 0 46px;
+  }
+}
 
 /* logo */
 .logo-container {
@@ -339,6 +349,11 @@ ul, li {
   position: absolute;
   right: 15px;
   bottom: 50px;
+}
+@media screen and (max-width: 350px) {
+  .burger-container {
+    right: 0;
+  }
 }
 .burger-container:focus .burger-line {
   height: 0;
@@ -1164,9 +1179,6 @@ ul, li {
   body {
     font-size: 14px;
   }
-  .header .container {
-    padding: 30px 15px 46px;
-  }
   .logo-container .logo-img--header {
     width: 33.39px;
     height: 34.67px;
@@ -1444,13 +1456,5 @@ ul, li {
   }
   .reasons {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
-@media screen and (max-width: 350px) {
-  header .container {
-    padding: 30px 0 46px;
-  }
-  .burger-container {
-    right: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
