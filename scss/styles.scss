@@ -1,21 +1,22 @@
-@import 'reset';
-@import 'fonts';
-@import 'variables';
-@import 'template';
-@import 'mixins';
-@import 'keyframes';
-@import 'shared-components';
-@import 'header.scss';
-@import 'main-info.scss';
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "template";
+@import "mixins";
+@import "keyframes";
+@import "shared-components";
+@import "header.scss";
+@import "main-info.scss";
 @import "cards";
 @import "reasons";
 @import "services";
 @import "form";
 @import "album";
+@import "triangle";
 @import "footer";
 
 body {
- @extend .font-styles;
+  @extend .font-styles;
 }
 
 .container {
@@ -30,6 +31,6 @@ body {
   &--form {
     @media screen and (max-width: 768px) {
       padding: 0;
-    } 
+    }
   }
 }

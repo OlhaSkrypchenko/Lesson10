@@ -1,0 +1,8 @@
+.triangle-section {
+  @extend .sectionMargin;
+}
+
+.triangle {
+  @include triangle(50px, $blue);
+  margin: 0 auto;
+}
