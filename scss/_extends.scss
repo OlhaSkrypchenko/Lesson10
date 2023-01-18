@@ -5,6 +5,14 @@
     font-size: 16px;
     line-height: 140%;
     color: $black;
+
+    @media screen and (max-width: 960px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 
 .defaultLink {
@@ -20,6 +28,12 @@
     position: relative;
 }
 
+.menu-info-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 18px 0;
+  }
+
 .subtitle {
     color:  $blue;
     font-weight: bold;
@@ -32,8 +46,20 @@
     font-weight: 400;
     font-size: 34px;
     line-height: 130%;
+
+    @media screen and (max-width: 768px) {
+        font-size: 22px;
+    }
   
     &-sub {
       @extend .subtitle;
+    }
+}
+
+.sections-gap {
+    margin: 90px auto;
+    
+    @media screen and (max-width: 768px) {
+        margin: 30px auto;
     }
 }

@@ -4,6 +4,16 @@
     line-height: 135%;
     background: rgb(161, 199, 212);
     background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+
+    @media screen and (max-width: 960px) {
+      font-size: 16px;
+      background: linear-gradient(180deg, #A1C7D4 0%, #0680AA 100%);
+    }
+  
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      background: linear-gradient(180deg, #A1C7D4 0%, #0680AA 100%);
+    }
   
     .container {
       display: flex;
@@ -45,6 +55,10 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 18px;
+    }
   }
   
   .menu-container--footer {
@@ -57,7 +71,12 @@
   
     &-item {
       margin-bottom: 20px;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 14px;
+      }
     }
+
   
     &-link{
       color: $dark-blue;
@@ -80,6 +99,10 @@
     &-title {
       margin: 0 0 7px 3px;
       font-size: 20px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
     }
   }
   
@@ -89,6 +112,14 @@
   .contacts {
     color: $white;
     width: 27%;
+
+    @media screen and (max-width: 861px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 17px;
+    }
   
     &-title {
       font-weight: bold;
@@ -96,6 +127,11 @@
       line-height: 40px;
       text-transform: uppercase;
       margin: 0 0 20px 0;
+
+      @media screen and (max-width: 768px) {
+        font-size: 21px;
+        line-height: 25px;
+      }
     }
   }
   
@@ -120,6 +156,11 @@
   .tel-link--footer{
     @extend .footerLink;
     padding-left: 38px;
+
+    @media screen and (max-width: 768px) {
+      display:inline-block;
+      margin-bottom: 15px;
+    }
   
     &::before {
       @include footer-link--icon(23px, url(./../assets/phone-white.svg));
@@ -183,6 +224,11 @@
   .social-media {
     margin: 15px 0;
     gap: 22px;
+
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   
     &-link {
       &:hover {
@@ -199,5 +245,10 @@
     text-align: end;
     font-size: 13px;
     margin: 12px 0 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 11px;
+      margin: 36px 0;
+    }
   }
   

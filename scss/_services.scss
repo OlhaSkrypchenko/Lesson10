@@ -1,5 +1,5 @@
 .services {
-    margin: 90px auto;
+    @extend .sections-gap;
     max-width: 980px;
   }
   
@@ -10,16 +10,41 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+
+    @media screen and (max-width: 991px) {
+      justify-content: center;
+      gap: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin: 15px 0;
+      gap: 0;
+      flex-direction: column;
+      align-items: center;
+    }
   
     .services-container {
       max-width: 325px;
+
+      @media screen and (max-width: 768px) {
+        max-width: 80%;
+        text-align: center;
+      }
   
       &--left {
         text-align: right;
+
+        @media screen and (max-width: 768px) {
+          text-align: center;
+        }
       }
   
       &--right {
         text-align: left;
+
+        @media screen and (max-width: 768px) {
+          text-align: center;
+        }
       }
     }
     
@@ -30,6 +55,11 @@
     min-height: 121.56px;
     position: relative;
     animation-duration: 1s;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 15px;
+      min-height: auto;
+    }
   
     &--1{
       animation-name: service--1;
@@ -38,11 +68,19 @@
     &--2{
       margin-right: 50px;
       animation-name: service--2;
+
+      @media screen and (max-width: 991px) {
+        margin-right: 0;
+      }
     }
   
     &--3{
       transform: translate(50px, 0);
       animation-name: service--3;
+
+      @media screen and (max-width: 991px) {
+        transform: translate(0, 0);
+      }
     }
   
     &--4{
@@ -52,11 +90,19 @@
     &--5{
       margin-left: 50px;
       animation-name: service--5;
+
+      @media screen and (max-width: 991px) {
+        margin-left: 0;
+      }
     }
   
     &--6{
       transform: translate(-50px, 0);
       animation-name: service--6;
+
+      @media screen and (max-width: 991px) {
+        transform: translate(0, 0);
+      }
     }
   
     &-title{
@@ -65,6 +111,28 @@
       font-size: 20px;
       line-height: 135%;
       color: $blue;
+
+      &--text {
+        @media screen and (max-width: 991px) {
+          position: relative;
+        }
+
+        &::before {
+          @media screen and (max-width: 991px) {
+            content: "+";
+            color: $white;
+            width: 24px;
+            height: 24px;
+            left: -30px;
+            border-radius: 50%;
+            background-color:  $blue;
+            position: absolute;
+            text-align: center;
+            font-weight: normal;
+            line-height: 120%;
+          }
+        }
+      }
     }
   
     &-description {
@@ -80,6 +148,10 @@
     border: 1px solid $black;
     border-radius: 50%;
     flex-shrink: 0;
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
   
     &-point {
       position: absolute;
@@ -144,57 +216,22 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
+
+    &-icon {
+      @media screen and (max-width: 768px) {
+        width: 50px;
+      }
+    }
   
     &-description {
       font-size: 20px;
       color:  $blue;
       margin: 0;
+
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
 
 
-  @media screen and (max-width: 991px) {
-    .services-content {
-      justify-content: center;
-      gap: 50px;
-    }
-  
-    .service--2 {
-      margin-right: 0;
-    }
-  
-    .service--5 {
-      margin-left: 0;
-    }
-  
-    .service--3 {
-      transform: translate(0, 0);
-    }
-  
-    .service--6 {
-      transform: translate(0, 0);
-    }
-  
-    .service-title--text {
-      position: relative;
-    }
-  
-    .service-title--text:before {
-      content: "+";
-      color: $white;
-      width: 24px;
-      height: 24px;
-      left: -30px;
-      border-radius: 50%;
-      background-color:  $blue;
-      position: absolute;
-      text-align: center;
-      font-weight: normal;
-      line-height: 120%;
-    }
-  
-  
-    .circle {
-      display: none;
-    }
-  }
